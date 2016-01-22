@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "landing_header.html" %}
+
+<!-- Banner -->
+<section id="banner">
+  <h2>{{ SITENAME_FANCY }}</h2>
+  <p>We are a group of data science enthusiasts, <br>dedicated to learning by doing</p>
+  <ul class="actions">
+    <li>
+      <a href="https://www.meetup.com/prairieml" class="button big"><i class="icon-s icon-mup-sticker"></i> Meetup</a>
+    </li>
+    <li>
+      <a href="https://prairieml.slack.com" class="button big"><i class="icon fa-slack"></i> Slack</a>
+    </li>
+  </ul>
+  <i class="icon circled big fa-angle-double-down"></i>
+</section>
+
+
+<!-- One -->
+<section id="one" class="wrapper style1 special">
+  <div class="container">
+    <header class="major">
+      <h2>Expolring and applying data science</h2>
+    </header>
+    <div class="row 150%">
+      <div class="4u 12u$(medium)">
+        <section class="box">
+          <i class="icon big rounded color1 fa-graduation-cap"></i>
+          <h3>Educate</h3>
+          <p>We meet regularly to learn and explore cutting-edge technology in machine learning.</p>
+        </section>
+      </div>
+      <div class="4u 12u$(medium)">
+        <section class="box">
+          <i class="icon big rounded color6 fa-code"></i>
+          <h3>Develop</h3>
+          <p>We help developing real life solutions in business and academic settings.</p>
+        </section>
+      </div>
+      <div class="4u$ 12u$(medium)">
+        <section class="box">
+          <i class="icon big rounded color10 fa-comments"></i>
+          <h3>Communicate</h3>
+          <p>We are dedicated to building a community for open discussion and collaboration.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

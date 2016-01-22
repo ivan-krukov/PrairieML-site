@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+Transit by TEMPLATED
+templated.co @templatedco
+Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  <meta charset="utf-8" />
+  <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- JS -->
+  <!--[if lte IE 8]><script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/html5shiv.js"></script><![endif]-->
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/skel.min.js"></script>
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/skel-layers.min.js"></script>
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/init.js"></script>
+
+  <!-- CSS -->
+  <noscript>
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/skel.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style-xlarge.css" />
+  </noscript>
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/meetup-modern-icons.css" />
+
+</head>
+
+<body>
+
+  {% block content %}
+  {% endblock %}
+
+  {% include "footer.html" %}
+
+</body>
+</html>

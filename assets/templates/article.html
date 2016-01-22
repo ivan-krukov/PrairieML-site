@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% include "header.html" %}
+
+{% block title %}
+{{ article.title }}
+{% endblock %}
+
+{% block content %}
+<section class="wrapper" id="main">
+  <div class="container">
+    <header class="major">
+      <h2>{{ article.title }}</h2>
+    </header>
+
+    {{ article.content }}
+  </div>
+</section>
+{% endblock %}
